@@ -21,7 +21,7 @@ class RestaurantCLI:
 
             if choice == '1':
                 product_id = input("Enter product ID: ")
-                product = self.database.search_product_by_id(product_id)
+                product = self.database.search_product(product_id)
                 self.display_product_details(product)
             elif choice == '2':
                 print("Exiting...")
