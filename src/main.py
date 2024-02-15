@@ -110,6 +110,7 @@ def main():
                         )
 
                         restaurant_chain.add_product(product)
+                        database.insert_product(product)
             database.insert_restaurant_chain(restaurant_chain, Product_Folder_Path)
 
     cli = RestaurantCLI(database)
